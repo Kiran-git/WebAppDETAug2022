@@ -1,0 +1,26 @@
+﻿@page
+@using WebAppDETAug2022.Modelss
+@model WebAppDETAug2022.Pages.Shared.IPLEventModel
+@{
+}
+<h1>Welcome to ipl 2022 </h1>
+<h2>Ticket Details</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>MaxLimit</th>
+    </tr>
+
+    @foreach(Ticket t in Model.Tickets)
+    {
+        <tr>
+            <td>@t.ID</td>
+            <td>Category</td
+            <td>@t.Price</td>
+            <td>@t.MaxLimit</td>
+        </tr>
+
+    }
+</table>

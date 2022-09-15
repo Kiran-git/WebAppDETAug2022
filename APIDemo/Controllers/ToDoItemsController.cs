@@ -23,6 +23,7 @@ namespace APIDemo.Controllers
 
         // GET: api/ToDoItems
         [HttpGet]
+        [EnebleQuery]
         public async Task<ActionResult<IEnumerable<ToDoItems>>> GetToDoItems()
         {
           if (_context.ToDoItems == null)
